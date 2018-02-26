@@ -38,4 +38,10 @@ public class EightBallTest {
         assertEquals(2, eightBall.getAnswerCount());
     }
 
+    @Test
+    public void canNotRemoveItem(){
+        eightBall.remove("Cheese");
+        assertEquals(3, eightBall.getAnswerCount());
+    }
+
 }
